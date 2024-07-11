@@ -1,0 +1,28 @@
+echo PACK SHELL
+if [ -d "./core/" ];then
+    if [ -d "./core/api/" ];then
+        if [ -f "./core/api/get.py" ];then
+            echo ./core/api/* checked
+            else
+            echo Missing file
+        fi
+        else
+        echo Missing file
+    fi
+    else
+    echo Missing file
+fi
+
+if [ -d "./core/img" ];then
+    if [ -f "./core/img/api-py.ico" ];then
+        if [ -f "./core/img/bg.png" ];then
+            if [ -f "./core/img/main-py.ico" ];then
+            else
+            echo Missing file
+        fi
+        else
+        echo Missing file
+    fi
+    else
+    echo Missing file
+fi
